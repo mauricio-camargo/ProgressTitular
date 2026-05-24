@@ -1,9 +1,9 @@
 ---
-#title: "Memorial acadêmico - Professor Titular<hr>"
-#subtitle: "<b>Maurício Garcia de Camargo</b><hr>"
-#author: "Universidade Federal do Rio Grande - FURG"
-#date: today
-#date-format: "DD/MM/YYYY"
+title: "Memorial acadêmico <hr>"
+subtitle: "Trajetória, contribuições e projeto acadêmico"
+author: "<b>Maurício Garcia de Camargo</b>"
+date: today
+date-format: "DD/MM/YYYY"
 format:
   revealjs:
     theme: serif
@@ -13,14 +13,13 @@ format:
     height: 900
     margin: 0.05
     center: false
-    title-slide: false
 execute:
   echo: false
   warning: false
   message: false
 ---
 
-##
+## Memorial acadêmico para professor titular {.center-text}
 <!-- Esse título (#) tem que ficar aqui, antes do <style>, senão aparece um slide em branco. -->
 
 <style>
@@ -143,20 +142,9 @@ execute:
 .centro {
   text-align: center;
 }
-.cita {
-  color: #555;
-  font-size: 0.7em;
+.direita {
   text-align: right;
 }
-
-.tit {font-family: "Aptos"; 
-  color: #365314;
-  letter-spacing: -0.02em;
-  text-align: center;
-  font-size: 2em;
-  margin-top: 0.25em;
-}
-
 </style>
 
 
@@ -171,7 +159,7 @@ timeline <- function(year,
                      end = 2026,
                      show_caption = FALSE) {
   periods <- data.frame(
-    label=c("Nascimento","Infância e adolescência em Brasília","Oceanologia", "Mestrados e doutorado", "Pós-Doc","Professor CEM-UFPR", "Professor FURG"),
+    label=c("Nascimento","Infância e adolescência em Brasília","Oceanologia", "Pós-graduação", "Pós-Doc","Professor CEM-UFPR", "Professor FURG"),
     key=c("nasc",   "ado",   "grad",   "pg",   "pdoc",   "cem",   "furg"),
     ini=c(1968,     1973,    1986,     1991,   2001,     2004,    2015),
     fim=c(1973,     1986,    1991,     2001,   2004,     2015,    2026),
@@ -217,101 +205,82 @@ timeline <- function(year,
 }
 ```
 
+<hr>
 `r timeline(1968, active = "")`
-:::{.tit}
-Memorial acadêmico para professor titular
-:::
-:::{.cita}
-*O conhecimento sempre precede a ação.*<br>
-*Ousar é perder o equilíbrio momentaneamente.*<br> 
-*Não ousar é perder-se.*<br>
-Kierkegaard
-:::
-::: {.tit}
-**Maurício Garcia de Camargo**  
-:::
+<hr>
+
+<br><br>
+
 ::: {.centro}
+**Maurício Garcia de Camargo**  
+<br>
 Trajetória, contribuições e projeto acadêmico  
 <br>
-`r format(Sys.Date(), "%d/%m/%Y")`  
+Universidade Federal do Rio Grande — FURG  
 <br>
-
-![](img/logo_furg1.jpg)
-![](img/logo_io.png)
-![](img/logo_imef.jpg)
-
+`r format(Sys.Date(), "%d/%m/%Y")`
 :::
 
-
-## 
-`r timeline(1968, active = "nasc")`
-:::{.tit}
-Nascimento no interior de São Paulo (Março/1968)
-:::
-::: {.cita}
-*E se lembrou de quando era uma criança.*
-<br>*E de tudo o que vivera até ali.* R.R.
-:::
+## Nascimento no interior de SP 
 <hr>
-<center>
-
-Rancharia - SP
-
-![](img/Rancharia.jpg)
-
-## 
 `r timeline(1968, active = "nasc")`
-
-:::{.tit}
-Antepassados
-:::
-::: {.cita}
-*Me diz por que que o céu é azul.* R.R.
-:::
 <hr>
+::: {.direita}
+*E se lembrou de quando era uma criança.* 
+<br>*E de tudo o que vivera até ali.*
+:::
 
 ::: {.two-col}
-::: {.card}
-- Avós eram imigrantes portuguesa e sírio-libanesa, que tinham pequenos comércios.
-- Meus pais se casaram com 21/22 anos e tiveram três filhos. Sou o caçula.
-- Pai bancário do Banco de Brasil e fez Matemática e Economia na UNESP.
-- Mãe virou professora de matemática de escola.
-- A família e a matemática.
-- Pai decidiu fazer mestrado em Brasília na UnB.
-:::
-::: {.card}
-![](img/Rancharia.jpg)
-:::
+::: {}
+- Nasci em Rancharia (1968), interior de SP, onde vivi até os 4 anos de idade (1972).
+- Meus pais eram filhos de pequenos comerciantes.
+- Minhas avós eram imigrantes portuguesa e sírio-libanesa.  
+- Meus avôs eram brasileiros de muitas gerações.
 :::
 
-##
-`r timeline(1973, active = "ado")`
-:::{.tit}
-Mudança para Brasília (Nov/1972)
+![](img/Rancharia.jpg)
 :::
-::: {.cita}
-*Meu Deus, mas que cidade linda...* R.R.
-:::
+
+
+## Meus pais
 <hr>
+`r timeline(1968, active = "nasc")`
+<hr>
+
+:::{.incremental}
+- Meu pai foi professor de matemática nato, desde adolescente.
+- Com 18 anos ele passou num concurso do BB e tomou posse em Rancharia, onde vivia. 
+- Conheceu minha mãe e se casaram com 21/22 anos e tiveram 3 filhos. Sou o mais novo. 
+- Ela virou professora de matemática de escola.
+- Ele se formou em matemática e economia pela UNESP e foi fazer mestrado em Brasília na UnB.
+:::
+
+## Mudança para Brasília
+<hr>
+`r timeline(1973, active = "ado")`
+<hr>
+<br><br>
 
 - Início difícil para a família em Brasília.  
 - Depois do mestrado, meu pai retornou ao BB, agora num cargo alto, e a vida melhorou.  
 - Minha infância foi livre, muito livre.
 
-##
-`r timeline(1977, active = "ado")`
-:::{.tit}
-A vida em Brasília
-:::
-:::{.cita}
+:::{.note .centro}
 *Por toda a plataforma*  
-*Você não vê a torre, yeah!!!* R.R.
+*Você não vê a torre, yeah!!!*
+:::
+
+## Mudança para Brasília
+<hr>
+`r timeline(1973, active = "ado")`
+<hr>
+:::{.small .centro}
+*Meu Deus, mas que cidade linda...*
 :::
 <hr>
 
 - Com 7/8 anos todos tinham o mapa de brasília na cabeça.  
 - E podíamos passar debaixo da roleta dos ônibus...
-- Ditadura!
 
 ## Estrutura narrativa do memorial
 
